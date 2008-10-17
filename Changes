@@ -1,5 +1,9 @@
 Revision history for String-IRC
 
+0.03  2008-10-18
+  * typo fixed.
+    http://rt.cpan.org/Public/Bug/Display.html?id=40039
+
 0.02  2007-02-23
   * build require Test::Base.
 

@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use overload (
     q{""}    => 'stringify',
@@ -37,7 +37,7 @@ my %color_table = (
     6  => [qw(purple)],
     7  => [qw(orange       olive)],
     8  => [qw(yellow)],
-    9  => [qw(lightt_green lime)],
+    9  => [qw(light_green lime)],
     10 => [qw(teal)],
     11 => [qw(light_cyan   cyan aqua)],
     12 => [qw(light_blue   royal)],
@@ -118,7 +118,7 @@ optional. Available COLOR and BC_COLOR are as follows.
   purple
   orange olive
   yellow
-  lightt_green lime
+  light_green lime
   teal
   light_cyan cyan aqua
   light_blue royal
