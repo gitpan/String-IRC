@@ -1,6 +1,6 @@
 # -*- mode: generic; -*-
 steps = FindVersion, ChangeVersion, CheckChangeLog, Manifest, DistTest, Commit, Tag, MakeDist, UploadCPAN, DistClean
-git.tagpattern = release-%v
+svn.tagpattern = release-%v
 
 # twitter.config   = ~/.twitterrc
 # twitter.distname = __Module-Name-Fixme__

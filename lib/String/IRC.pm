@@ -4,7 +4,7 @@ use warnings;
 use strict;
 use Carp;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use overload (
     q{""}    => 'stringify',
@@ -56,9 +56,9 @@ my %color_name_table;
             *{__PACKAGE__.'::'.$color} = sub {
                 my $color_code = "";
                 if ($_[1] && exists $color_name_table{ $_[1] }) {
-                    $color_code .= "$code,$color_name_table{ $_[1] }";
+                    $color_code .= sprintf "%02d,%02d", $code, $color_name_table{ $_[1] };
                 } else {
-                    $color_code .= "$code";
+                    $color_code .= sprintf "%02d",      $code;
                 }
                 $_[0]->_add_code_l("$color_code");
             };
